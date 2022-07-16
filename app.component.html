@@ -1,0 +1,46 @@
+<!--<div class="d-flex h-100">-->
+<!--  &lt;!&ndash;NAVBAR&ndash;&gt;-->
+<!--  <mat-drawer-container class="bg-white shadow rounded" autosize>-->
+<!--    <mat-drawer #drawer class="d-flex h-100 flex-column p-4" opened mode="side">-->
+<!--      &lt;!&ndash; Logo &ndash;&gt;-->
+<!--      <div class="d-flex justify-content-center">-->
+<!--        <p>Logo</p>-->
+<!--      </div>-->
+
+<!--      <div class="d-flex flex-column justify-content-center align-items-center flex-grow-1">-->
+<!--        &lt;!&ndash; Elenco &ndash;&gt;-->
+<!--        <button (click)="navigateTo(homePagePath.elencoGame)" mat-mini-fab color="primary" matTooltip="{{screenSize > 1300 ? pageNames.elencoGame : null}}" class="my-5">-->
+<!--          <mat-icon class="material-icons-outlined">-->
+<!--            subject-->
+<!--          </mat-icon>-->
+<!--        </button>-->
+
+<!--        &lt;!&ndash; Storico &ndash;&gt;-->
+<!--        <button (click)="navigateTo(homePagePath.storico)" mat-mini-fab color="primary" matTooltip="{{screenSize > 1300 ? pageNames.storico : null}}" class="my-5">-->
+<!--          <mat-icon class="material-icons-outlined">-->
+<!--            history-->
+<!--          </mat-icon>-->
+<!--        </button>-->
+
+<!--        &lt;!&ndash; Crea Game &ndash;&gt;-->
+<!--        <button (click)="navigateTo(homePagePath.creaGame)" mat-mini-fab color="primary" matTooltip="{{screenSize > 1300 ? pageNames.creaGame : null}}" class="my-5">-->
+<!--          <mat-icon class="material-icons-outlined">-->
+<!--            edit-->
+<!--          </mat-icon>-->
+<!--        </button>-->
+<!--      </div>-->
+<!--    </mat-drawer>-->
+
+<!--  </mat-drawer-container>-->
+
+<!--  <ng-container *ngIf="screenSize <= 1300">-->
+<!--    <button color="warn" mat-mini-fab class="shadow-none" type="button" (click)="drawer.toggle()">-->
+<!--      <mat-icon>menu</mat-icon>-->
+<!--    </button>-->
+<!--  </ng-container>-->
+
+  <div class="w-100">
+    <!--  Body-->
+    <router-outlet></router-outlet>
+  </div>
+<!--</div>-->

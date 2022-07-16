@@ -1,0 +1,44 @@
+<div class="position-absolute top-50 start-50 translate-middle">
+
+  <!-- Login container -->
+  <div class="d-flex flex-column justify-content-center">
+    <h1>REGISTRATI</h1>
+
+    <!-- Login form   -->
+    <form class="d-flex flex-column" [formGroup]="registerForm">
+      <!-- Username -->
+      <mat-form-field>
+        <mat-label>Nome</mat-label>
+        <input [formControlName]="'name'" matInput>
+        <mat-error>Campo obbligatorio</mat-error>
+      </mat-form-field>
+
+      <!-- Email -->
+      <mat-form-field>
+        <mat-label>Email</mat-label>
+        <input [formControlName]="'email'" matInput>
+        <mat-error>Campo obbligatorio</mat-error>
+      </mat-form-field>
+
+      <!-- Password -->
+      <mat-form-field>
+        <mat-label>Password</mat-label>
+        <input type="password" [formControlName]="'password'" matInput>
+        <mat-error>Campo obbligatorio</mat-error>
+      </mat-form-field>
+
+      <!-- Conferma password -->
+      <mat-form-field>
+        <mat-label>Conferma password</mat-label>
+        <input type="password" [formControlName]="'password_confirmation'" matInput>
+        <mat-error>Campo obbligatorio</mat-error>
+      </mat-form-field>
+
+      <!-- login button -->
+      <button mat-raised-button color="primary" class="mt-2" (click)="executeRgister()">Salva</button>
+    </form>
+
+    <!-- Registration button -->
+    <button mat-stroked-button color="primary" class="mt-2" (click)="returnToLoginPage()">Annulla</button>
+  </div>
+</div>
